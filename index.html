@@ -4,208 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="section section__container nav__container">
-            <div class="nav__logo">Health <span>Care</span></div>
+            <div class="nav__logo"><span></span></div>
             <ul class="nav__links">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#">About us</a></li>
-                <li class="link"><a href="#">Services</a></li>
-                <li class="link"><a href="#">Blog</a></li>
+               
+                
             </ul>
-            <button class="btn">Contact Us</button>
+            <p>Contact Us <a href="footer__socials"></a></p>
         </nav>
         <div class="section__container header__header">
             <div class="header__content">
                 <h1>Analysis and prediction of Brain Stroke</h1>
-                <h1>Online brain stroke prediction
-                    A model with ____ % accuracy of predictions.
-                    </h1>
-                <p>A stroke is a medical emergency.
-                    Symptoms of stroke include trouble walking, speaking and understanding, as well as paralysis or numbness of the face, arm or leg.
-                    Early treatment with medication like tPA (clot buster) can minimize brain damage. Other treatments focus on limiting complications and preventing additional strokes.</p>
-                    <button class="btn">See Services</button>
+                <h1>A model with <p>99.104% </p> accuracy of predictions.</h1>
+                
+                    
             </div>
             
             
     </header>
-
+    <hr>
+<div class="cont">
     <section class="section__container service__container">
         <div class="service__header">
             
             <div class="service__header__content">
-                <p>A brain stroke is a medical condition which which occurs when the blood supply to a part of the brain is blocked or a blood vessel in the brain bursts . <br>This project aims to deliver a user-friendly website which assists people to accurately predict if there is a possibity of having a brain stroke or not . so that they can approach a medical proffessional timely</p>
+                <p>A brain stroke is a medical condition which which occurs when the blood supply to a part of the brain is blocked or a blood vessel in the brain bursts . This is a third party website that enables people to determine whether there is a chance of brain stroke or not from the comfort of their home and consult doctors accordingly </p>
+                
                 <h2 class="section__header">Brain stroke Symptoms</h2>
-                <div class="section__header__li">
-                <ul><li>Sudden numbness or weakness of the face, arm or leg, </li>
-                    <li>especially on one side of the eyes. </li>
-                    <li>Sudden confusion, trouble speaking or understanding.</li> 
-                    <li>Sudden trouble seeing in one or both eyes.</li> 
-                    <li>Sudden trouble walking, dizziness, loss of balance and coordination. </li>
-                    <li>Sudden severe headache with no known cause.</li></ul>
+                <div class="section__header__p">
+                <p>Sudden numbness or weakness of the face, arm or leg, 
+                    especially on one side of the eyes. </p>
+                    <p>Sudden confusion, trouble speaking or understanding. </p>
+                    <p>Sudden trouble seeing in one or both eyes.</p>
+                    <p>Sudden trouble walking, dizziness, loss of balance and coordination. 
+                    <p>Sudden severe headache with no known cause.</p>
+                    <hr>
+                    <div class="column2">
+                        <img src="assets/symptom3.jpg" alt="symptom image">
+                    </div>
                     <h2 class="section__header">What causes a brain stroke</h2>
-                    <div class="section__header__li">
-                        <ul>
-                            <li>obesity</li>
-                            <li>are 55 years of age or older</li>
-                            <li>personal or family history of stroke</li>
-                            <li>high blood pressure</li>
-                            <li>diabetes</li>
-                            <li>high cholesterol</li>
-                            <li>heart disease, carotid artery disease, or another vascular disease</li>
-                            <li>Sedentary lifestyle</li>
-                            <li>Excessive consumption of alcohol</li>
-                            <li>Smoking</li>
+                    
+                    <div class="section__header__p p">
+                        
+                           
+                        <p>obesity</p>
+                        <p> are 55 years of age or older</p>
+                        <p>  personal or family history of stroke</p>
+                        <p> high blood pressure</p>
+                        <p> diabetes</p>
+                        <p>high cholesterol</p>
+                        <p>heart disease, carotid artery disease, or another vascular disease
+                        <p>Sedentary lifestyle</p>
+                        <p>Excessive consumption of alcohol </p>
+                        <p>Smoking</p>
 
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
-            <div class="section__header__img">
-           <img src="assets/symptom1.png" alt="symptom image">
-           <img src="assets/symptom2.png" alt="symptom image">
+            
+    </div><hr>
+    <div class="row">
+        <div class="column">
+            <img src="assets/symptom1.png" alt="symptom image">
+        </div>
+        <div class="column1">
+            <img src="assets/symptom2.png" alt="symptom image">
+        </div>
+        <div class="column4">
+            <img src="assets/cause1.png" alt="symptom image">
+        </div>
+
+    </div>
+   
+        </div>
+
+       
+    
+        <div class="forms__container"><h1>Brain Stroke Prediction</h1>
+    <form action="/predict" method="post">
+       
+        <label for="gender">Choose a Gender:</label>
+
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select><br><br>
+        
+        <label for="age">Enter Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        
+        <label for="hypertension">Presence of Hypertension /High Blood Pressure:</label>
+        <select name="hypertension" id="hypertension">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select><br><br>
+        
+        <label for="heart_disease">Presence of Heart Disease:</label>
+        <select name="heart_disease" id="heart_disease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select><br><br>
+        
+        <label for="ever_married">Present or Previously Married:</label>
+        <select name="ever_married" id="ever_married">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+       <br><br>
+        
+        <label for="work_type">Select the Work Type:</label>
+        <select name="work_type" id="work_type">
+            <option value="Children">Children</option>
+            <option value="Govt Job">Government Job</option>
+            <option value="Private">Private</option>
+            <option value="Never Worked">Never Worked</option>
+            <option value="Self Employed">Self Employed</option>
+
+          </select>
+        <br><br>
+        
+        <label for="type_of_residence">Select the Type of Residence:</label>
+        <select name="type_of_residence" id="type_of_residence">
+            <option value="Rural">Rural</option>
+            <option value="Urban">Urban</option>
+          </select>
+        <br><br>
+        
+        <label for="avg_glucose_level"> Enter the Average Glucose Level / Average Sugar Level:</label>
+        <input type="text" id="avg_glucose_level" name="avg_glucose_level"><br><br>
+        
+        <label for="height"> Enter Height in metres:</label>
+        <input type="text" id="height" name="height"><br><br>
+
+        <label for="weight"> Enter Weight in kilograms:</label>
+        <input type="text" id="weight" name="weight"><br><br>
+
+        <label for="smoking_status"> Select the Smoking Status:</label>
+        <select name="smoking_status" id="smoking_status">
+            <option value="Currently Smokes">Currently Smokes</option>
+            <option value="Formerly Smoked">Formerly Smoked</option>
+            <option value="Never Smoked">Never Smoked</option>
+          </select>
+       <br><br>
+
+
+        
+        <input type="submit" value="Predict">
+    </form>
+    <div class="predict__text">{{ prediction_text }}</div><br><br>
+    <div class="dashboard"><iframe width="1200" height="900" src="https://lookerstudio.google.com/embed/reporting/4b3fa1ca-0611-4467-9c8b-1058f7f6f4cb/page/p_02sw1qt8hd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+    </div>
         </div>
     </div>
-
-        <div class="service__grid">
-            <div class="service__card">
-                <span><i class="ri-microscope-line"></i></span>
-           <h4>Laboratory test</h4>
-           <p>Accurate analysis and prediction</p>
-           <a href="#">Learn more</a>
-            </div>
-            <div class="service__card">
-                <span><i class="ri-mental-health-line"></i></span>
-           <h4>Laboratory test</h4>
-           <p>Accurate analysis and prediction</p>
-           <a href="#">Learn more</a>
-            </div>
-            <div class="service__card">
-                <span><i class="ri-hospital-line"></i></span>
-           <h4>Digital test</h4>
-           <p>Accurate analysis and prediction</p>
-           <a href="#">Learn more</a>
-            </div>
-        </div>
-    </section>
-    <section class="section__container about__container">
-        <div class="about__content">
-            <h2 class="section__header">About us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti autem eveniet repellendus at placeat ratione voluptates esse? Eius rem expedita, eum accusantium similique voluptas dignissimos porro illo temporibus perspiciatis laboriosam, esse eligendi incidunt quis. Hic libero amet consequatur voluptatem dolorum, esse voluptates sequi, quo sint earum non, quod eaque.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti autem eveniet repellendus at placeat ratione voluptates esse? Eius rem expedita, eum accusantium similique voluptas dignissimos porro illo temporibus perspiciatis laboriosam, esse eligendi incidunt quis. Hic libero amet consequatur voluptatem dolorum, esse voluptates sequi, quo sint earum non, quod eaque.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti autem eveniet repellendus at placeat ratione voluptates esse? Eius rem expedita, eum accusantium similique voluptas dignissimos porro illo temporibus perspiciatis laboriosam, esse eligendi incidunt quis. Hic libero amet consequatur voluptatem dolorum, esse voluptates sequi, quo sint earum non, quod eaque.</p>
-            <div class="about__image">
-                <img src="assets/brain2.jpg" alt="about">
-            </div>
-        </div>
-    </section>
+    
+   
     <section class="section__container why__container">
-        <div class="why__image">
-            <img src="assets/brain2.jpg" alt="Why this model">
-        </div>
+        
         <div class="why__content">
-            <h2 class="section__header">What's the importance</h2>
-            <p>
-                <div class="why__grid">
-                    <span><i class="ri-hand-heart-line"></i></span>
+            <h1 class="section__header"><ul><li>Why Our Model</li></ul></h1>
                     <div>
-                        <h4>Appropriate results</h4>
-                        <p>our model tends to offer better prediction of brain stroke</p>
+                        <h4>1. Extensive Training:</h4>
+                        <p> Our model is trained on a robust dataset of 44,436 records. </p>
                     </div>
-                    <span><i class="ri-truck-line"></i></span>
                     <div>
-                        <h4>Appropriate results</h4>
-                        <p>our model tends to offer better prediction of brain stroke</p>
+                        <h4>2. Cutting-Edge Techniques: </h4>
+                        <p>Utilized over 50 innovative base and ensemble machine learning models.</p>
                     </div>
-                    <span><i class="ri-hospital-line"></i></span>
                     <div>
-                        <h4>Appropriate results</h4>
-                        <p>our model tends to offer better prediction of brain stroke</p>
+                        <h4>3. Exceptional Accuracy: </h4>
+                        <p>Achieved an impressive prediction accuracy of 99.1043%.</p>
                     </div>
+                    <div>
+                        <h4>4. Insightful Analytics:</h4>
+                        <p>Features interactive dashboards to explore brain stroke statistics by  Age, Glucose Level , BMI and more such critical parameters.</p>
+                    </div>
+                    
                 </div>
-            </p>
-        </div>
-    </section>
-    <section class="section__container.doctors__container">
-        <div class="doctors__header">
-            <div class="doctors__header__content">
-                <h2 class="section__header">Our special doctors</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quia aperiam dolor consequatur officia necessitatibus laborum, id possimus cumque explicabo, voluptates iusto velit repellat mollitia! Veritatis quam inventore sunt assumenda.\</p>
-            </div>
-            <div class="doctors__nav">
-                <span><i class="ri-arrow-left-line"></i></span>
-                <span><i class="ri-arrow-right-line"></i></span>
+            
+            <div class="column3">
+                <img src="assets/why1.jpg" alt="symptom image">
             </div>
         </div>
-        <div class="doctors__grid">
-            <div class="doctors__card">
-                <div class="doctors__card__image">
-                    <img src="assets/brain2.jpg" alt="doctor">
-                    <div class="doctors__socials">
-                        <span><i class="ri-instagram-line"></i></span>
-                        <span><i class="ri-facebook-fill"></i></span>
-                        <span><i class="ri-heart-fill"></i></span>
-                        <span><i class="ri-twitter-x-fill"></i></span>
-                    </div>
-                </div>
-                    <h4>saniya</h4>
-                    <p>Nuerologist</p>
-
-                </div>
-                <div class="doctors__card">
-                    <div class="doctors__card__image">
-                        <img src="assets/brain2.jpg" alt="doctor">
-                        <div class="doctors__socials">
-                            <span><i class="ri-instagram-line"></i></span>
-                            <span><i class="ri-facebook-fill"></i></span>
-                            <span><i class="ri-heart-fill"></i></span>
-                            <span><i class="ri-twitter-x-fill"></i></span>
-                        </div>
-                    </div>
-                        <h4>saniya</h4>
-                        <p>Nuerologist</p>
-                         </div>
     </section>
+</div>
+    
     <footer class="footer">
         <div class="section__container footer__container">
             <div class="footer__col">
-                <h3>health <span>care</span>
+                <h3> <span></span>
                 </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consequatur delectus, expedita perferendis repellat eum sunt repudiandae ut. Fugiat, dignissimos ducimus. Saepe natus ex accusamus molestiae architecto cum ea nihil.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi nemo ipsum laboriosam hic est, aut iusto labore natus ut maiores, debitis corporis voluptate laudantium, perspiciatis optio itaque animi? Incidunt!</p>
-
+                <h4>Prepared By</h4>
+                <ul>
+                    <li>AMRUHA AHMED
+                        <li>(1604-21-733-001)</li>
+                    </li>
+                    <li>SANIYA MAHEVEEN
+                        <li>(1604-21-733-301)</li>
+                    </li>
+                </ul>
             </div>
             <div class="footer__Col">
-                <h4>About Us</h4>
-                <p>Home</p>
-                <p>About Us</p>
-                <p>Work with us</p>
-                <p>Terms & Conditions</p>
+                
             </div>
             <div class="footer__col">
-                <h4>Services</h4>
-                <p>Search terms</p>
-                <p>Advance Search</p>
-                <p>Privacy policy</p>
-                <p>Suppliers</p>
-                <p>Our Stories</p>
+               
             </div>
             <div class="footer__col">
                 <h4>Contact Us</h4>
                 <p>
                     <i class="ri-map-pin-2-fill">Hyderabad</i>
-                    <i class="ri-mail-fill">Support@care.com</i>
+                    <i class="ri-mail-fill">amruha.ahmed@gmail.com</i>
+                    <i class="ri-mail-fill">saniyamaheveen@gmail.com</i>
                     <i class="ri-phone-fill">+911234567890</i>
                 </p>
             </div>
         </div>
+        <hr>
 <div class="footer__bar">
     <div class="footer__bar__content">
         <p>Copyrights all rights reserved</p>
@@ -219,5 +239,6 @@
 </div>
     
     </footer>
+    
 </body>
 </html>
